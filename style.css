@@ -1,0 +1,344 @@
+/* Start Rulze Page Home */
+
+:root {
+  --main-color: #7FC8A9;
+  --second-color: #368B85;
+}
+
+body {
+  font-family: 'Comic Neue';
+  background: #f7f7f7
+}
+
+.flex-display {
+  display: flex
+}
+
+/* End Rulze Page Home */
+
+/* Start Upperbar */
+
+.upperbar {
+  background: #111;
+  padding: 5px 0;
+  color: #f7f7f7;
+  position: relative
+}
+
+.upperbar .info,
+.upperbar .box-login .login-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.upperbar .info .social span {
+  line-height: 35px;
+  margin-right: 3px
+}
+
+.upperbar .info .social>div,
+.upperbar .info .user>div,
+.upperbar .box-login .login-social>div {
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .4s;
+  color: var(--main-color);
+  position: relative
+}
+
+.upperbar .info .user .count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: #fff;
+  color: var(--main-color);
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px
+}
+
+.upperbar .info .img img {
+  display: block;
+  max-width: 100%;
+  margin: auto
+}
+
+.upperbar .box-search,
+.upperbar .box-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .9);
+  z-index: 3;
+  display: none
+}
+
+.upperbar .box-search form,
+.upperbar .info-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  overflow: hidden
+}
+
+.upperbar .box-search input[type="search"] {
+  background: #333;
+  padding: 10px 15px;
+  border: 0;
+  border-bottom: 2px solid #888;
+  font-size: 25px;
+  outline: none;
+  width: 80%
+}
+
+.upperbar .box-search input[type="search"]::placeholder {
+  color: #fff
+}
+
+.upperbar .box-search .exit,
+.upperbar .box-login .info-login .exit {
+  background: var(--main-color);
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border-radius: 50px;
+  cursor: pointer
+}
+
+.upperbar .info-login .img {
+  margin-bottom: 20px
+}
+
+.upperbar .info-login .img img {
+  max-width: 100%;
+  display: block;
+  margin: auto
+}
+
+.upperbar .info-login .img h3,
+.upperbar .box-login h3 {
+  font-family: 'Suez One';
+  margin: 0;
+  margin-top: 10px;
+  text-transform: uppercase
+}
+
+.upperbar .box-login .login-social {
+  justify-content: center;
+  margin-top: 15px
+}
+
+.upperbar .box-login .login-social>div:first-child {
+  background: #1877f2;
+  border: 1px solid #1877f2
+}
+
+.upperbar .box-login .login-social>div:nth-child(2) {
+  background: #1d9bf0;
+  border: 1px solid #1d9bf0
+}
+
+.upperbar .box-login .login-social>div:last-child {
+  background: #dd5144;
+  border: 1px solid #dd5144
+}
+
+.upperbar .info-login {
+  background: #111;
+  width: 35%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px
+}
+
+.upperbar .info-login form {
+  display: flex;
+  flex-direction: column
+}
+
+.upperbar .info-login form input[type="email"],
+.upperbar .info-login form input[type="password"],
+.upperbar .info-login form input[type="submit"] {
+  width: 100%;
+  margin: 0 auto 15px;
+  background: #f7f7f7;
+  border: 0;
+  border-bottom: 4px solid var(--main-color);
+  outline: none;
+  padding: 10px 7px;
+  color: #333;
+  font-size: 18px
+}
+
+.upperbar .info-login form input[type="submit"] {
+  border-bottom: 0;
+  background: var(--main-color);
+  transition: .5s;
+  margin-bottom: 0
+}
+
+.upperbar .info-login form input[type="submit"]:hover {
+  background: #444;
+  color: #fff
+}
+
+.upperbar .box-login {
+  background: rgba(54, 139, 133, 0.8)
+}
+
+.upperbar .box-login .info-login .exit {
+  top: 0;
+  right: 0;
+  border-radius: 0
+}
+
+/* End Upperbar */
+
+/* Start Header */
+
+.header {
+  background: url(img/banner.jfif) fixed;
+  background-size: cover;
+  min-height: 553px;
+  position: relative
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6)
+}
+
+.header .navbar {
+  background: rgba(0, 0, 0, .4) !important;
+  position: relative;
+  z-index: 2
+}
+
+.header .navbar .navbar-nav {
+  margin: 0;
+  padding: 0
+}
+
+.header .navbar .navbar-nav .nav-item {
+  margin: 0 10px;
+  font-size: 20px
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff !important
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:hover,
+.header .navbar .navbar-nav .nav-item .nav-link.active {
+  color: var(--main-color) !important
+}
+
+.header .navbar .navbar-brand img {
+  width: 70px;
+  max-width: 100%;
+  display: none
+}
+
+.header .navbar .navbar-toggler {
+  border: 1px solid #f7f7f7 !important;
+  border-radius: 3px;
+  padding: 4px 10px
+}
+
+.header .navbar .navbar-toggler:focus {
+  box-shadow: none
+}
+
+.header .navbar .navbar-toggler-icon {
+  background-image: url(img/menu.png) !important
+}
+
+.header .des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%)
+}
+
+.header .des h1 {
+  font-family: 'Suez One';
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 80px
+}
+
+.header .des h1 span {
+  color: var(--main-color)
+}
+
+.header .des p {
+  width: 50%;
+  margin: 0 auto 10px;
+  font-size: 18px
+}
+
+.header .des button {
+  background: var(--main-color);
+  padding: 15px 60px;
+  outline: none;
+  border-radius: 50px;
+  border: 0;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: .5s
+}
+
+.header .des button:hover {
+  background: #fff;
+  color: #000
+}
+
+/* End Header */
+
+/* color: #fff */
+
+.upperbar .info .social>div:hover,
+.upperbar .info .user>div:hover,
+.upperbar .box-search input[type="search"],
+.upperbar .box-search .exit,
+.upperbar .box-login .info-login .exit,
+.upperbar .box-login .login-social>div,
+.upperbar .info-login .img h3,
+.upperbar .box-login h3,
+.upperbar .info-login form input[type="submit"],
+.header .des button,
+.header .des {
+  color: #fff
+}
+
+/* font-weight: bold */
+
+.header .des button,
+.header .navbar .navbar-nav .nav-item .nav-link.active,
+.upperbar .info-login form input[type="submit"],
+.upperbar .info .user .count,
+.upperbar .info .social span {
+  font-weight: bold
+}
