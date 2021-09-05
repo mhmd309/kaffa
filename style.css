@@ -215,7 +215,7 @@ body {
 .header {
   background: url(img/banner.jfif) fixed;
   background-size: cover;
-  min-height: 553px;
+  min-height: 600px;
   position: relative
 }
 
